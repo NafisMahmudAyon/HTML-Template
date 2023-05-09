@@ -141,7 +141,7 @@ function HomePage() {
           {users.map((e, index) => (
             <div className="px-4 sm:mx-2 sm:px-0 slide">
               {/* Item content */}
-              <div className="w-[25vw] sm:w-screen   flex justify-center items-center text-3xl ">
+              <div key={e.id} className="w-[25vw] sm:w-screen   flex justify-center items-center text-3xl ">
                 {/* visiul data  */}
                 <div className="rounded-lg shadow-[0px_10px_20px_7px_#00000024] bg-back border-gray-700">
                   <a href={`${e.url}/${e.id}`}>

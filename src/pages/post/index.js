@@ -421,7 +421,7 @@ function Post({data}) {
         <div className="w-[85%] ">
             <div className="  grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4">
             {displayedItems.map( e => (
-                <div className="rounded-lg shadow-[0px_10px_20px_7px_#00000024] bg-back border-gray-700">
+                <div key={e.id} className="rounded-lg shadow-[0px_10px_20px_7px_#00000024] bg-back border-gray-700">
                 <a href={`${e.url}/${e.id}`}>
                   <img
                     className="rounded-t-lg"
