@@ -429,6 +429,9 @@ function Post({data}) {
                     className="rounded-t-lg"
                     src={`${e.image}${e.id}.png`}
                     alt="post layout"
+                    cover
+                    width={1000}
+                    height={600}
                   />
                 </Link>
                 <div className="p-5 flex">

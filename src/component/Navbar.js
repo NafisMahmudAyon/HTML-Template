@@ -17,6 +17,8 @@ function Navbar() {
           <Image
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8 mr-3"
+            width={32}
+            height={32}
             alt="HTML Template Logo"
           />
           <span className="self-center text-text text-2xl font-semibold whitespace-nowrap">
