@@ -455,9 +455,9 @@ function Post({data}) {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       ></path>
                     </svg>
                   </a>
@@ -468,9 +468,9 @@ function Post({data}) {
         </div>
         
         <div className="text-center my-6">
-            <a onClick={handleLoadMore} class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-text rounded hover:bg-white group">
-                <span class="w-48 h-48 rounded rotate-[-40deg] bg-text-mark absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                <span class="relative w-full text-left text-text-sec font-bold font-serif transition-colors duration-300 ease-in-out group-hover:text-white">Load More</span>
+            <a onClick={handleLoadMore} className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-text rounded hover:bg-white group">
+                <span className="w-48 h-48 rounded rotate-[-40deg] bg-text-mark absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span className="relative w-full text-left text-text-sec font-bold font-serif transition-colors duration-300 ease-in-out group-hover:text-white">Load More</span>
             </a>
         </div>
         </div>
