@@ -59,7 +59,7 @@ function Layouts146({post}) {
             .map(e => {
                   return(
                     
-                      <div className='flex flex-row sm:flex-col md:flex-row '>
+                      <div key={e.id} className='flex flex-row sm:flex-col md:flex-row '>
                           <div className='fill-white w-16 sm:pl-2 sm:pb-2 flex items-start justify-start'>
                               <div className='rounded-full p-2 bg-emerald-400 flex items-center justify-center'><PostIcon /></div>
                           </div>
