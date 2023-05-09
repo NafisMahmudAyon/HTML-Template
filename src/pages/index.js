@@ -1,6 +1,5 @@
 import Layout from "@/component/Layout";
 import React, { useRef, useEffect, useState } from "react";
-import { useGesture } from "react-use-gesture";
 
 const sections = [
   {
