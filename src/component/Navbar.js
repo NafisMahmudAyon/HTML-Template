@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -31,7 +31,6 @@ function Navbar() {
           aria-expanded="false"
           onClick={toggleExpansion}
         >
-          
           <span className="sr-only">Open main menu</span>
           <svg
             className="w-6 h-6"
@@ -47,13 +46,19 @@ function Navbar() {
             ></path>
           </svg>
         </button>
-        <div className={`  ${navbar ? "absolute top-14 left-1/2 -translate-x-1/2 w-[85%] block  rounded-lg shadow-md shadow-res-head z-10" : "hidden"} `} id="navbar-default">
+        <div
+          className={`  ${
+            navbar
+              ? "absolute top-14 left-1/2 -translate-x-1/2 w-[85%] block  rounded-lg shadow-md shadow-res-head z-10"
+              : "hidden"
+          } `}
+          id="navbar-default"
+        >
           <ul className="font-medium flex flex-col p-4 mt-4 border  rounded-lg bg-back  border-res-head">
             <li>
               <Link
                 href="/"
                 className="block py-2 pl-3 pr-4 text-text hover:text-text-mark hover:bg-text hover:rounded-md "
-                aria-current="page"
               >
                 Home
               </Link>
