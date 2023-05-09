@@ -70,7 +70,7 @@ const Layouts1 = ({ post }) => {
     <div className="grid grid-cols-1 rounded-md gap-3 p-3 bg-back ">
         {post.slice(startIndex, endIndex).map((e) => {
           return (
-            <div className="flex flex-col bg-white">
+            <div key={e.id} className="flex flex-col bg-white">
               <div className="">
                 <img
                   src={e.postImage}
@@ -179,7 +179,7 @@ const Layouts1 = ({ post }) => {
                 <div className="grid grid-cols-1 rounded-md gap-3 p-3 bg-back ">
                   {post.slice(startIndex, endIndex).map((e) => {
                     return (
-                      <div className="flex flex-col bg-white">
+                      <div  key={e.id}  className="flex flex-col bg-white">
                         <div className="">
                           <img
                             src={e.postImage}
@@ -217,7 +217,7 @@ const Layouts1 = ({ post }) => {
                 <div className="grid grid-cols-2 rounded-lg gap-3 bg-back p-4">
                   {post.slice(startIndex, endIndex).map((e) => {
                     return (
-                      <div className="flex flex-col  bg-white">
+                      <div key={e.id}  className="flex flex-col  bg-white">
                         <div className="">
                           <img
                             src={e.postImage}
@@ -255,7 +255,7 @@ const Layouts1 = ({ post }) => {
                 <div className="grid grid-cols-3 gap-3 w-full rounded-lg bg-back p-4">
                   {post.slice(startIndex, endIndex).map((e) => {
                     return (
-                      <div className="flex flex-col bg-white">
+                      <div key={e.id}  className="flex flex-col bg-white">
                         <div className="">
                           <img
                             src={e.postImage}

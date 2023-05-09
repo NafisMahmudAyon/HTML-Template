@@ -49,7 +49,7 @@ function Layouts148({post}) {
             .map(e => {
                   return(
                     
-                      <div className='bg-slate-100 hover:bg-slate-300 py-4 px-2'>
+                      <div key={e.id}  className='bg-slate-100 hover:bg-slate-300 py-4 px-2'>
                         <p>{e.postCategory}</p>
                         <div>
                             <h2 className='text-3xl font-bold font-serif my-5 break-words'>{e.postTitle}</h2>

@@ -64,7 +64,7 @@ const Layouts146 = ({ post }) => {
                 <div className="grid grid-cols-1 rounded-md gap-4 p-3 bg-[#1e293b] ">
                   {post.slice(startIndex, endIndex).map((e) => {
                     return (
-                        <div className='flex flex-col bg-white py-3'>
+                        <div key={e.id}  className='flex flex-col bg-white py-3'>
                         <div className='fill-white w-16 pl-2 pb-2 flex items-start justify-start'>
                             <div className='rounded-full p-2 bg-emerald-400 flex items-center justify-center'><PostIcon /></div>
                         </div>
@@ -89,7 +89,7 @@ const Layouts146 = ({ post }) => {
                 <div className="grid grid-cols-2 rounded-lg gap-3 bg-[#1e293b] p-4">
                   {post.slice(startIndex, endIndex).map((e) => {
                     return (
-                        <div className='flex flex-col bg-white py-3'>
+                        <div key={e.id}  className='flex flex-col bg-white py-3'>
                         <div className='fill-white w-16 pl-2 pb-2 flex items-start justify-start'>
                             <div className='rounded-full p-2 bg-emerald-400 flex items-center justify-center'><PostIcon /></div>
                         </div>
@@ -114,7 +114,7 @@ const Layouts146 = ({ post }) => {
                 <div className="grid grid-cols-3 gap-3 w-full rounded-lg bg-[#1e293b] p-4">
                   {post.slice(startIndex, endIndex).map((e) => {
                     return (
-                        <div className='flex flex-col bg-white py-3'>
+                        <div key={e.id}  className='flex flex-col bg-white py-3'>
                         <div className='fill-white w-16 pl-2 pb-2 flex items-start justify-start'>
                             <div className='rounded-full p-2 bg-emerald-400 flex items-center justify-center'><PostIcon /></div>
                         </div>
