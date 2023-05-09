@@ -149,7 +149,7 @@ function HomePage() {
                     <Image
                       className="rounded-t-lg"
                       src={`${e.image}${e.id}.png`}
-                      alt=""
+                      alt="post layout"
                     />
                   </Link>
                   <div className="p-5 flex">

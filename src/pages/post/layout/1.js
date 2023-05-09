@@ -184,6 +184,7 @@ const Layouts1 = ({ post }) => {
                         <div className="">
                           <Image
                             src={e.postImage}
+                            alt="featured image"
                             className="w-full h-[360px] object-cover"
                           />
                         </div>
@@ -222,6 +223,7 @@ const Layouts1 = ({ post }) => {
                         <div className="">
                           <Image
                             src={e.postImage}
+                            alt="featured image"
                             className="w-full h-[360px] object-cover"
                           />
                         </div>
@@ -260,6 +262,7 @@ const Layouts1 = ({ post }) => {
                         <div className="">
                           <Image
                             src={e.postImage}
+                            alt="featured image"
                             className="w-full h-[360px] object-cover"
                           />
                         </div>
