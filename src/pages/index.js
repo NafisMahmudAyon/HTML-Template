@@ -1,4 +1,6 @@
 import Layout from "@/component/Layout";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useRef, useEffect, useState } from "react";
 
 const sections = [
@@ -143,19 +145,19 @@ function HomePage() {
               <div className="w-[25vw] sm:w-screen   flex justify-center items-center text-3xl ">
                 {/* visiul data  */}
                 <div className="rounded-lg shadow-[0px_10px_20px_7px_#00000024] bg-back border-gray-700">
-                  <a href={`${e.url}/${e.id}`}>
-                    <img
+                  <Link href={`${e.url}/${e.id}`}>
+                    <Image
                       className="rounded-t-lg"
                       src={`${e.image}${e.id}.png`}
                       alt=""
                     />
-                  </a>
+                  </Link>
                   <div className="p-5 flex">
-                    <a href={`${e.url}/${e.id}`} className="grow">
+                    <Link href={`${e.url}/${e.id}`} className="grow">
                       <h5 className="mb-2 text-2xl font-medium font-serif tracking-tight text-text">
                         {`${e.title}${e.id}`}
                       </h5>
-                    </a>
+                    </Link>
                     <div>
                       {/* <button onClick={handleLikeClick} disabled={liked}>
         {liked ? "Liked" : "Like"}
@@ -163,7 +165,7 @@ function HomePage() {
       <p>{likeCount} likes</p> */}
                     </div>
 
-                    <a
+                    <Link
                       href={`${e.url}/${e.id}`}
                       className="inline-flex items-center px-3 py-2 text-sm font-medium text-center font-serif uppercase text-text-mark  rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 bg-text hover:bg-text-hover "
                     >
@@ -181,7 +183,7 @@ function HomePage() {
                           clipRule="evenodd"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 {/* visiul data  */}

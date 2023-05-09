@@ -1,4 +1,6 @@
 import Layout from "@/component/Layout";
+import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -422,19 +424,19 @@ function Post({data}) {
             <div className="  grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4">
             {displayedItems.map( e => (
                 <div key={e.id} className="rounded-lg shadow-[0px_10px_20px_7px_#00000024] bg-back border-gray-700">
-                <a href={`${e.url}/${e.id}`}>
-                  <img
+                <Link href={`${e.url}/${e.id}`}>
+                  <Image
                     className="rounded-t-lg"
                     src={`${e.image}${e.id}.png`}
                     alt=""
                   />
-                </a>
+                </Link>
                 <div className="p-5 flex">
-                  <a href={`${e.url}/${e.id}`} className="grow">
+                  <Link href={`${e.url}/${e.id}`} className="grow">
                     <h5 className="mb-2 text-2xl font-medium font-serif tracking-tight text-text">
                       {`${e.title}${e.id}`}
                     </h5>
-                  </a>
+                  </Link>
                   <div>
       {/* <button onClick={handleLikeClick} disabled={liked}>
         {liked ? "Liked" : "Like"}
@@ -442,7 +444,7 @@ function Post({data}) {
       <p>{likeCount} likes</p> */}
     </div>
         
-                  <a
+                  <Link
                     href={`${e.url}/${e.id}`}
                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center font-serif uppercase text-text-mark  rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 bg-text hover:bg-text-hover "
                   >
@@ -460,7 +462,7 @@ function Post({data}) {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -468,10 +470,10 @@ function Post({data}) {
         </div>
         
         <div className="text-center my-6">
-            <a onClick={handleLoadMore} className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-text rounded hover:bg-white group">
+            <Link onClick={handleLoadMore} className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-text rounded hover:bg-white group">
                 <span className="w-48 h-48 rounded rotate-[-40deg] bg-text-mark absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                 <span className="relative w-full text-left text-text-sec font-bold font-serif transition-colors duration-300 ease-in-out group-hover:text-white">Load More</span>
-            </a>
+            </Link>
         </div>
         </div>
     </div>

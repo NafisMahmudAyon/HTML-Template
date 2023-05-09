@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import Image from 'next/image'
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -12,8 +13,8 @@ function Navbar() {
         {/* <div>
           
         </div> */}
-        <a href="/" className="flex items-center">
-          <img
+        <Link href="/" className="flex items-center">
+          <Image
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8 mr-3"
             alt="HTML Template Logo"
@@ -21,7 +22,7 @@ function Navbar() {
           <span className="self-center text-text text-2xl font-semibold whitespace-nowrap">
             HTML Template
           </span>
-        </a>
+        </Link>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -49,45 +50,45 @@ function Navbar() {
         <div className={`  ${navbar ? "absolute top-14 left-1/2 -translate-x-1/2 w-[85%] block  rounded-lg shadow-md shadow-res-head z-10" : "hidden"} `} id="navbar-default">
           <ul className="font-medium flex flex-col p-4 mt-4 border  rounded-lg bg-back  border-res-head">
             <li>
-              <a
+              <Link
                 href="/"
                 className="block py-2 pl-3 pr-4 text-text hover:text-text-mark hover:bg-text hover:rounded-md "
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/post"
                 className="block py-2 pl-3 pr-4 text-text hover:text-text-mark hover:bg-text hover:rounded-md "
               >
                 Post Layout
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/Section"
                 className="block py-2 pl-3 pr-4 text-text hover:text-text-mark hover:bg-text hover:rounded-md "
               >
                 Section
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/post"
                 className="block py-2 pl-3 pr-4 text-text hover:text-text-mark hover:bg-text hover:rounded-md "
               >
                 Full Post Template
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/post"
                 className="block py-2 pl-3 pr-4 text-text hover:text-text-mark hover:bg-text hover:rounded-md "
               >
                 Full Page Template
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

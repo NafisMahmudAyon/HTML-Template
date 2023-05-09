@@ -1,4 +1,5 @@
 import Layout from "@/component/Layout";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
@@ -76,9 +77,9 @@ const index = () => {
             <button className="btn btn-success" type="submit">
               Save
             </button>
-            <a href="/" className="btn btn-danger">
+            <Link href="/" className="btn btn-danger">
               Back
-            </a>
+            </Link>
           </div>
         </form>
       </div>

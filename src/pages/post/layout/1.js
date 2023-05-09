@@ -6,6 +6,7 @@ import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import html from "react-syntax-highlighter/dist/cjs/languages/hljs/htmlbars";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import Layout from "@/component/Layout";
+import Image from "next/image";
 
 //layout fdsfds fsfsdf
 async function fetchData() {
@@ -181,7 +182,7 @@ const Layouts1 = ({ post }) => {
                     return (
                       <div  key={e.id}  className="flex flex-col bg-white">
                         <div className="">
-                          <img
+                          <Image
                             src={e.postImage}
                             className="w-full h-[360px] object-cover"
                           />
@@ -219,7 +220,7 @@ const Layouts1 = ({ post }) => {
                     return (
                       <div key={e.id}  className="flex flex-col  bg-white">
                         <div className="">
-                          <img
+                          <Image
                             src={e.postImage}
                             className="w-full h-[360px] object-cover"
                           />
@@ -257,7 +258,7 @@ const Layouts1 = ({ post }) => {
                     return (
                       <div key={e.id}  className="flex flex-col bg-white">
                         <div className="">
-                          <img
+                          <Image
                             src={e.postImage}
                             className="w-full h-[360px] object-cover"
                           />
